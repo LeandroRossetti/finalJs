@@ -9,7 +9,7 @@ async function dolarInNav(){
 
     let value=await getDolar()
     if (value!=undefined){
-    valueDolarDiv.innerHTML=value;
+    valueDolarDiv.innerHTML='VALOR DEL DOLAR ACTUAL U$D'+' '+value;
 }
 }
 
