@@ -1,4 +1,23 @@
+import { getDolar } from "./dolar.js";
 import { returnProducts } from "./menuListing.js";
+
+
+
+let valueDolarDiv=document.getElementById("valueDolar");
+
+async function dolarInNav(){
+
+    let value=await getDolar()
+    if (value!=undefined){
+    valueDolarDiv.innerHTML=value;
+}
+}
+
+
+dolarInNav();
+
+
+
 
 
 const arrayProducts=returnProducts();
